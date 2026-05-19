@@ -1,0 +1,95 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 14 thg 4, 2026, 08:00:00
+    Author     : Admin
+*/
+
+.header {
+    background-color: #0084ff;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+.header .logo {
+    font-size: 22px;
+    font-weight: bold;
+
+    color: white;
+
+    text-decoration: none;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.header .logo:hover {
+    opacity: 0.9;
+}
+
+.header .search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.header .search-bar input {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    width: 350px;
+}
+
+.header .search-bar button {
+    padding: 8px 20px;
+    background-color: #2196f3;
+    color: white;
+    border: 1px solid #fff;
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+    cursor: pointer;
+}
+
+.header .user-actions {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.header .user-actions a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.header .btn-register {
+    background-color: #00c853;
+}
+
+.header .cart {
+    position: relative;
+    font-size: 20px;
+    padding: 5px;
+}
+
+.header .cart-badge {
+    position: absolute;
+    top: -5px;
+    right: -10px;
+    background-color: red;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 11px;
+}

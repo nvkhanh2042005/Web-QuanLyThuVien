@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/Html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Thư viện sách</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                font-family: Arial, sans-serif;
+            }
+
+            body{
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: linear-gradient(135deg, #4facfe, #00f2fe);
+            }
+
+            .container{
+                text-align: center;
+                background: white;
+                padding: 50px;
+                border-radius: 20px;
+                box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            }
+
+            h1{
+                margin-bottom: 20px;
+                color: #333;
+            }
+
+            p{
+                margin-bottom: 30px;
+                color: #666;
+            }
+
+            a{
+                text-decoration: none;
+                background: #007BFF;
+                color: white;
+                padding: 15px 35px;
+                border-radius: 10px;
+                font-size: 18px;
+                transition: 0.3s;
+                display: inline-block;
+            }
+
+            a:hover{
+                background: #0056b3;
+                transform: scale(1.05);
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <h1>📚 Hệ Thống Quản Lý Thư Viện</h1>
+
+            <p>Chào mừng bạn đến với thư viện trực tuyến</p>
+
+            <a href="BookListServlet">
+                Vào Thư Viện
+            </a>
+        </div>
+
+    </body>
+</html>

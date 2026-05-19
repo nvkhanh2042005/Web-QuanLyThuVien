@@ -1,0 +1,303 @@
+/* Bao bọc toàn bộ nội dung chính */
+.content-body {
+    padding: 20px;
+    background-color: #fff;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* ===== TITLE ===== */
+.section-title {
+    font-size: 22px;
+    margin-bottom: 25px;
+    color: #333;
+    text-transform: uppercase;
+}
+
+/* ===== PRODUCT GRID ===== */
+.product-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 40px;
+
+    width: 100%;
+}
+
+/* ===== BOOK CARD ===== */
+.book-card {
+    border: 1px solid #e0e0e0;
+
+    border-radius: 8px;
+
+    background: #fff;
+
+    overflow: hidden;
+
+    display: flex;
+
+    flex-direction: column;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Link ảnh */
+.card-img-link {
+    display: block;
+    text-decoration: none;
+}
+
+/* Wrapper ảnh */
+.card-img-wrapper {
+    width: 100%;
+
+    height: 250px;
+
+    overflow: hidden;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background: #f9f9f9;
+
+    padding: 15px;
+}
+
+/* Ảnh */
+.card-img-wrapper img {
+    max-width: 100%;
+
+    max-height: 100%;
+
+    object-fit: contain;
+
+    transition: transform 0.3s ease;
+}
+
+.book-card:hover .card-img-wrapper img {
+    transform: scale(1.05);
+}
+
+/* Info */
+.card-info {
+    padding: 15px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    flex-grow: 1;
+}
+
+/* Link tiêu đề */
+.book-title-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* Tiêu đề */
+.book-title {
+    font-size: 14px;
+
+    color: #333;
+
+    margin-bottom: 8px;
+
+    line-height: 1.4;
+
+    height: 40px;
+
+    overflow: hidden;
+
+    display: -webkit-box;
+
+    -webkit-line-clamp: 2;
+
+    -webkit-box-orient: vertical;
+
+    font-weight: 600;
+}
+
+.book-title:hover {
+    color: #0084ff;
+}
+
+/* Giá */
+.book-price {
+    font-size: 16px;
+
+    font-weight: bold;
+
+    color: #d70018;
+
+    margin-bottom: 12px;
+
+    margin-top: auto;
+}
+
+/* Nút mua */
+.btn-buy {
+    width: 100%;
+
+    background-color: #fff;
+
+    color: #007bff;
+
+    border: 1px solid #007bff;
+
+    padding: 8px 0;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    font-weight: bold;
+
+    transition: all 0.3s;
+}
+
+.btn-buy:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* ===== PAGINATION ===== */
+.pagination {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 8px;
+}
+
+.pagination a {
+    padding: 8px 14px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 4px;
+
+    text-decoration: none;
+
+    color: #333;
+
+    background: #fff;
+
+    transition: all 0.2s;
+}
+
+.pagination a:hover {
+    background: #f1f1f1;
+}
+
+.pagination a.active {
+    background: #007bff;
+
+    color: white;
+
+    border-color: #007bff;
+}
+
+/* ===== FORM ===== */
+.form-container {
+    max-width: 600px;
+
+    margin: 40px auto;
+
+    background: #fff;
+
+    padding: 30px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+
+    font-size: 24px;
+
+    margin-bottom: 25px;
+
+    color: #000;
+
+    font-weight: bold;
+
+    border-bottom: 1px solid #eee;
+
+    padding-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"] {
+    width: 100%;
+
+    height: 45px;
+
+    padding: 0 15px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 4px;
+
+    font-size: 16px;
+}
+
+.file-upload-label {
+    font-weight: bold;
+
+    font-size: 18px;
+
+    margin-bottom: 10px;
+
+    display: block;
+}
+
+.btn-save-drive {
+    width: 100%;
+
+    height: 50px;
+
+    background-color: #007bff;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 6px;
+
+    font-size: 18px;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition: background 0.3s;
+}
+
+.btn-save-drive:hover {
+    background-color: #0056b3;
+}
